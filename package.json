@@ -1,0 +1,25 @@
+{
+  "name": "nathan-carey-cs4550-final-proj-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/careyn/nathan-carey-cs4550-final-proj-server.git"
+  },
+  "author": "Nathan Carey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/careyn/nathan-carey-cs4550-final-proj-server/issues"
+  },
+  "homepage": "https://github.com/careyn/nathan-carey-cs4550-final-proj-server#readme",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  }
+}
