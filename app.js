@@ -7,7 +7,6 @@ import UsersController from "./users/users-controller.js";
 import SessionController from "./session-controller.js";
 import CommentsController from "./comments/comments-controller.js";
 import mongoose from "mongoose";
-import FollowsController from "./follows/follows-controller.js";
 
 const options = {
     useNewUrlParser: true,
@@ -38,5 +37,4 @@ CatchesController(app)
 UsersController(app)
 SessionController(app)
 CommentsController(app)
-FollowsController(app)
 app.listen(4000)
