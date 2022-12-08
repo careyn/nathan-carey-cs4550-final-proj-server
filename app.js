@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import session from 'express-session'
-import MoviesController from "./movies/movies-controller.js";
+import PokemonController from "./pokemon/pokemon-controller.js";
 import LikesController from "./likes/likes-controller.js";
 import UsersController from "./users/users-controller.js";
 import SessionController from "./session-controller.js";
@@ -33,7 +33,7 @@ app.use(session({
     cookie: { secure: false }
 }))
 app.use(express.json())
-MoviesController(app)
+PokemonController(app)
 LikesController(app)
 UsersController(app)
 SessionController(app)

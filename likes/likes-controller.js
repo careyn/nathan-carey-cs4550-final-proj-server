@@ -1,4 +1,4 @@
-import {getMovies} from "../movies/movies-controller.js";
+import {getPokemon} from "../pokemon/pokemon-controller.js";
 import users from "../users/users.js";
 import * as likesDao from "./likes-dao.js";
 
