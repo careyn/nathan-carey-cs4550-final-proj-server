@@ -14,7 +14,6 @@ const UsersController = (app) => {
         res.json(actualUser)
     }
     const updateUser = () => {}
-    const deleteUser = () => {}
 
     const register = async (req, res) => {
         const user = req.body;
@@ -69,7 +68,6 @@ const UsersController = (app) => {
     app.get('/users/:uid', findUserById)
     app.post('/users', createUser)
     app.put('/users/:uid', updateUser)
-    app.delete('/users/:uid', deleteUser)
 
     app.post('/register', register)
     app.post('/login', login)
