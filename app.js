@@ -5,7 +5,7 @@ import PokemonController from "./pokemon/pokemon-controller.js";
 import LikesController from "./likes/likes-controller.js";
 import UsersController from "./users/users-controller.js";
 import SessionController from "./session-controller.js";
-import ReviewsController from "./reviews/reviews-controller.js";
+import CommentsController from "./comments/comments-controller.js";
 import mongoose from "mongoose";
 import FollowsController from "./follows/follows-controller.js";
 
@@ -37,6 +37,6 @@ PokemonController(app)
 LikesController(app)
 UsersController(app)
 SessionController(app)
-ReviewsController(app)
+CommentsController(app)
 FollowsController(app)
 app.listen(4000)
