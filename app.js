@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import session from 'express-session'
 import PokemonController from "./pokemon/pokemon-controller.js";
-import LikesController from "./likes/likes-controller.js";
+import CatchesController from "./catches/catches-controller.js";
 import UsersController from "./users/users-controller.js";
 import SessionController from "./session-controller.js";
 import CommentsController from "./comments/comments-controller.js";
@@ -34,7 +34,7 @@ app.use(session({
 }))
 app.use(express.json())
 PokemonController(app)
-LikesController(app)
+CatchesController(app)
 UsersController(app)
 SessionController(app)
 CommentsController(app)

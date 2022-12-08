@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-const likesSchema = mongoose.Schema({
+const catchesSchema = mongoose.Schema({
     user: {type: mongoose.Schema.Types.ObjectId, ref: 'UserModel'},
     pokemon: {type: mongoose.Schema.Types.ObjectId, ref: 'PokemonModel'},
-}, {collection: 'likes'})
-export default likesSchema
+}, {collection: 'catches'})
+export default catchesSchema
