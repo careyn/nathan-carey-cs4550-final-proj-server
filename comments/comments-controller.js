@@ -24,7 +24,7 @@ const CommentsController = (app) => {
         res.json(comments)
     }
     app.post('/api/comments', createComment)
-    app.delete('/comment/:cid', deleteComment)
+    app.delete('/api/comments/:cid', deleteComment)
 
     app.get('/api/pokemon/:pokemon_name/comments', findCommentsByPokemon)
     app.get('/api/users/:author/comments', findCommentsByAuthor)
