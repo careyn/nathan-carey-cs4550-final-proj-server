@@ -18,7 +18,10 @@ const options = {
     family: 4
 }
 
-mongoose.connect('mongodb+srv://ncarey:verysecurepassword@cluster0.wsid91c.mongodb.net/ncarey-final-proj?retryWrites=true&w=majority', options)
+mongoose.connect(process.env.DB_CONNECTION_STRING_FINAL_PROJ, options)
+
+console.log(process.env.SESSION_SECRET)
+console.log(process.env.DB_CONNECTION_STRING_FINAL_PROJ)
 
 const app = express();
 app.use(cors({
@@ -26,7 +29,7 @@ app.use(cors({
     origin: 'http://localhost:3000'
 }))
 app.use(session({
-    secret: 'should be an environment variable',
+    secret: process.env.SESSION_SECRET,
     resave: false, 
     saveUninitialized: true,
     cookie: { secure: false }
@@ -37,4 +40,4 @@ CatchesController(app)
 UsersController(app)
 SessionController(app)
 CommentsController(app)
-app.listen(4000)
+app.listen(process.env.PORT || 4000)
