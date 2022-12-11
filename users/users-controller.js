@@ -18,7 +18,6 @@ const UsersController = (app) => {
         const user = req.body;
         await userDao.updateUser(uid, user)
         const updatedUser = await userDao.findUserById(uid)
-        console.log(updatedUser)
         res.json(updatedUser)
     }
 

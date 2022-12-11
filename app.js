@@ -20,9 +20,6 @@ const options = {
 
 mongoose.connect(process.env.DB_CONNECTION_STRING_FINAL_PROJ, options)
 
-console.log(process.env.SESSION_SECRET)
-console.log(process.env.DB_CONNECTION_STRING_FINAL_PROJ)
-
 const app = express();
 app.use(cors({
     credentials: true, //access-control-allow-credentials:true
