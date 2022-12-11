@@ -26,7 +26,7 @@ console.log(process.env.DB_CONNECTION_STRING_FINAL_PROJ)
 const app = express();
 app.use(cors({
     credentials: true, //access-control-allow-credentials:true
-    origin: 'http://localhost:3000'
+    origin: ['https://luxury-griffin-47d4a8.netlify.app', 'http://localhost:3000']
 }))
 app.use(session({
     secret: process.env.SESSION_SECRET,
